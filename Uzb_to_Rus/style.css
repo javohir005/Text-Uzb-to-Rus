@@ -1,0 +1,19 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+textarea {
+  width: 100%;
+  padding: 1rem;
+  overflow-y: auto;
+  color: #333;
+  cursor: text;
+  resize: none;
+}
+
+textarea::-webkit-scrollbar {
+  width: 10px;
+}

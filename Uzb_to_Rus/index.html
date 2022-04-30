@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uzb to Rus text convertor</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 1rem;
+      overflow-y: auto;
+      color: #333;
+      cursor: text;
+      resize: none;
+    }
+
+    textarea::-webkit-scrollbar {
+      width: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-6">
+        <textarea cols="30" rows="10" class="text" placeholder="Matn kiriting"></textarea>
+      </div>
+      <div class="col-6">
+        <textarea cols="30" rows="10" class="natija" readonly></textarea>
+      </div>
+      <button type="button" class="btn btn-dark d-block mx-auto mt-4 clear">Clear</button>
+      <button type="button" class="btn btn-dark d-block mx-auto mt-4 copy" title="Text copied">Copy</button>
+
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
